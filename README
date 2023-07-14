@@ -1,0 +1,31 @@
+Intrucciones
+1.  Crea un algoritmo que genere aleatoriamente una carta 
+    en cada actualización:
+2.  Cada vez que el sitio web actualiza una nueva carta 
+    aleatoria debe mostrarse.
+3.  La carta debe tener una de las posibles palo/pinta:
+    Corazones, Picas, Clubes y Diamantes.
+4.  El valor de la carta debe ser uno de los siguientes:
+    2 a 10, Rey, Reina, Jota o As (sin comodín).
+
+
+
+
+Pista
+1.  Recuerda que el primer evento en el ciclo de vida
+    de un sitio web es onLoad (su código comienza a 
+    ejecutarse allí), debe generar un número aleatorio 
+    entre 1 y 4 para elegir un palo y otro número 
+    aleatorio entre 0 y 12 para elegir un número de 
+    tarjeta.
+2.  Crea una clase general .card que aplique los 
+    estilos generales a cada carta, y una clase CSS 
+    adicional para cada palo/pinta: .spade, .club, 
+    .heart & .diamond.
+3.  Aplica la clase .card a toda la división, pero 
+    solo aplica una de las clases de la pinta/palo a 
+    la vez, dependiendo de la pinta/palo que desees 
+    aplicar. Por ejemplo, un 3 de corazones tendrá 
+    esta declaración HTML: <div class='card heart'></div>
+4.  Copia y pega estos emojis dentro te tu codigo para 
+    los simbolos: ♦ ♥ ♠ ♣
