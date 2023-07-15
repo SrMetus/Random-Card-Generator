@@ -18,21 +18,30 @@ function randomSuitCard() {
         let color = document.querySelectorAll("#mySuit")[index];
         switch(randomSuit) {
             case 1:
+                color.classList.remove("diamond", "heart", "spade", "club");
                 color.classList.add("diamond");
                 break;
             case 2:
+                color.classList.remove("diamond", "heart", "spade", "club");
                 color.classList.add("heart");
                 break;
             case 3:
+                color.classList.remove("diamond", "heart", "spade", "club");
                 color.classList.add("spade");
                 break;
             case 4:
+                color.classList.remove("diamond", "heart", "spade", "club");
                 color.classList.add("club");
                 break;
         }
         console.log(color);
     });
 }
+
+window.addEventListener('click', function() {
+    randomSuitCard();
+    randomNumberCard();    
+});
 
 function randomNumberCard() {
     let card = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
